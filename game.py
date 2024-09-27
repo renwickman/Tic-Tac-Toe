@@ -11,6 +11,9 @@ def TicTacToe():
 
         checkMove('O', board)
         status = checkWin('O', board)
+        if status == True:
+            break
+    return
 
 def checkMove(S, moves):
     N = input(S + ' move: ')
